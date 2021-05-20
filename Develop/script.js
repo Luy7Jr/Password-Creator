@@ -39,7 +39,7 @@ function generatePassword () {
     var upperCaseConfirm = confirm("Want your password to contain uppercase?");
         if (upperCaseConfirm === true) {
             for (var i=0; i<upperCaseCharacters.length; i++) {
-                collectionOfVariables.push(upperCaseCharacters[i]);
+                collectionOfValids.push(upperCaseCharacters[i]);
             
             }
         }
