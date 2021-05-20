@@ -47,8 +47,18 @@ function generatePassword () {
     var numberConfirm = confirm("Want your password to include numbers?");
         if (numberConfirm === true) {
             for (var i=0; i<numberCharacters.length; i++) {
-            collectionOfValids.push(numberChar[i]);
+            collectionOfValids.push(numberCharacters[i]);
             } 
         }
+    
+    var specialConfirm = confirm("Want your password to contain special characters?");
+        if (specialConfirm === true)  {
+            for (var i=0; i<specialCharacters.length; i++) {
+                collectionOfValids.push(specialCharacters[i]);
+            }
+        }
+
+    
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
