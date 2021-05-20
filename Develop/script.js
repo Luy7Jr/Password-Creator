@@ -1,6 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+var collection0Valids = [];
+var upperCaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" .split("");
+var lowerCaseCharacters = "abcdefghiklmnopqrsttuvwxtz" .split("");
+var numberCharacters = "0123456789" .split ("");
+var specialCharacters = "*&^%$#@!?><{}" .split("");
 
 
 
