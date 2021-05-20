@@ -43,5 +43,12 @@ function generatePassword () {
             
             }
         }
+
+    var numberConfirm = confirm("Want your password to include numbers?");
+        if (numberConfirm === true) {
+            for (var i=0; i<numberCharacters.length; i++) {
+            collectionOfValids.push(numberChar[i]);
+            } 
+        }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
