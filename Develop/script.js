@@ -10,6 +10,7 @@ var specialCharacters = "*&^%$#@!?><{}" .split("");
 
 // Write password to the #password input
 function writePassword() {
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -31,7 +32,7 @@ function generatePassword () {
     var lowerCaseConfirm = confirm("Want your password to contain lowercase?");
         if(lowerCaseConfirm === true) {
             for (var i=0; i<lowerCaseCharacters.length; i++) {
-                collectionOfVariables.push(lowerCaseCharacters[i]);
+                collectionOfValides.push(lowerCaseCharacters[i]);
             }
         }
 
