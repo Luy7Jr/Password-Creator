@@ -65,8 +65,5 @@ function generatePassword () {
   return randomPassword;
 }
 
-
-    
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
