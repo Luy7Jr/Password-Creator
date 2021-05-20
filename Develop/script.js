@@ -28,7 +28,20 @@ function generatePassword () {
         alert("Error! Please Try Again.");
         return;
     }
-}
 
+    var lowerCaseConfirm = confirm("Want your password to contain lowercase?");
+        if(lowerCaseConfirm === true) {
+            for (var i=0; i<lowerCaseCharacters.length; i++) {
+                collectionOfVariables.push(lowerCaseCharacters[i]);
+            }
+        }
+
+    var upperCaseConfirm = confirm("Want your password to contain uppercase?");
+        if (upperCaseConfirm === true) {
+            for (var i=0; i<upperCaseCharacters.length; i++) {
+                collectionOfVariables.push(upperCaseCharacters[i]);
+            
+            }
+        }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
