@@ -58,6 +58,14 @@ function generatePassword () {
             }
         }
 
+    var randomPassword = "";
+    for (var i=0; i<lengthConfirm; i++) {
+         collectionOfValids[Math.floor(Math.random() * collectionOfValids.length)];
+    }
+  return randomPassword;
+}
+
+
     
 
 // Add event listener to generate button
