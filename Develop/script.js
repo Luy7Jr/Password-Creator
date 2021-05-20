@@ -1,6 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+var collectionOfValids = [];
+var upperCaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" .split("");
+var lowerCaseCharacters = "abcdefghiklmnopqrsttuvwxtz" .split("");
+var numberCharacters = "0123456789" .split ("");
+var specialCharacters = "*&^%$#@!?><{}" .split("");
+
 // Write password to the #password input
 function writePassword() {
 
@@ -22,12 +28,6 @@ function generatePassword () {
         return;
     }
 
-    var collectionOfValids = [];
-    var upperCaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" .split("");
-    var lowerCaseCharacters = "abcdefghiklmnopqrsttuvwxtz" .split("");
-    var numberCharacters = "0123456789" .split ("");
-    var specialCharacters = "*&^%$#@!?><{}" .split("");
-    
     var lowerCaseConfirm = confirm("Want your password to contain lowercase?");
         if(lowerCaseConfirm === true) {
             for (var i=0; i<lowerCaseCharacters.length; i++) {
