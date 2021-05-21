@@ -56,15 +56,15 @@ function generatePassword () {
                 collectionOfValids.push(specialCharacters[i]);
             }
         }
-
-    var randomPassword = "";
-    for (var i=0; i<lengthConfirm; i++) {
-         collectionOfValids[Math.floor(Math.random() * collectionOfValids.length)];
-         randomPassword +=
-            collectionOfValids[Math.floor(Math.random() * collectionOfValids.length)];
-    }
-  return randomPassword;
-}
-
+        
+        var randomPassword = "";
+        for (var i=0; i<lengthConfirm; i++) {
+             collectionOfValids[Math.floor(Math.random() * collectionOfValids.length)];
+             randomPassword +=
+                collectionOfValids[Math.floor(Math.random() * collectionOfValids.length)];
+        }
+        return randomPassword;
+        }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
