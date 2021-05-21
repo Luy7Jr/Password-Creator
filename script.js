@@ -28,18 +28,19 @@ function generatePassword () {
         return;
     }
 
-    var lowerCaseConfirm = confirm("Want your password to contain lowercase?");
-        if(lowerCaseConfirm === true) {
-            for (var i=0; i<lowerCaseCharacters.length; i++) {
-                collectionOfValids.push(lowerCaseCharacters[i]);
-            }
-        }
-
     var upperCaseConfirm = confirm("Want your password to contain uppercase?");
         if (upperCaseConfirm === true) {
             for (var i=0; i<upperCaseCharacters.length; i++) {
                 collectionOfValids.push(upperCaseCharacters[i]);
             
+            }
+        }
+
+
+    var lowerCaseConfirm = confirm("Want your password to contain lowercase?");
+        if(lowerCaseConfirm === true) {
+            for (var i=0; i<lowerCaseCharacters.length; i++) {
+                collectionOfValids.push(lowerCaseCharacters[i]);
             }
         }
 
@@ -56,7 +57,7 @@ function generatePassword () {
                 collectionOfValids.push(specialCharacters[i]);
             }
         }
-        
+
         var randomPassword = "";
         for (var i=0; i<lengthConfirm; i++) {
              collectionOfValids[Math.floor(Math.random() * collectionOfValids.length)];
